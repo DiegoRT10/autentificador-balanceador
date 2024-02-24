@@ -5,7 +5,7 @@ require('dotenv').config();
 
 router.get('/',(reg, res) => {
     console.log('entre a la ruta ');
-    res.send('¡Hola Diego!');
+    res.send('¡Hola Mundo!');
 });
 
   
