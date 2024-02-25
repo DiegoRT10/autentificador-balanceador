@@ -13,9 +13,13 @@ app.use(cors());
 
 //ROUTS
 const useRouteInicio = require('./api/routes/inicio');
+const useRouteUsuario = require('./api/routes/usuario');
+const useRouteCliente = require('./api/routes/cliente');
 
 
 app.use('/inicio',useRouteInicio);
+app.use('/usuario',useRouteUsuario);
+app.use('/cliente', useRouteCliente);
 
 
 
