@@ -3,7 +3,7 @@ const app = require('./app');
 const fs = require('fs');
 require('dotenv').config();
 
-const puerto = process.env.DEV_PORT;
+const puerto = process.env.TEST_PORT;
 
 
 const server =  app.listen(puerto, ()=>{
