@@ -1,6 +1,6 @@
 FROM node:16.20.2
 
-WORKDIR /api
+WORKDIR /api-rest
 
 COPY . .
 
