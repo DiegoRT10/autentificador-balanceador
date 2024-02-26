@@ -2,11 +2,12 @@ version: '3'
 
 services:
   api:
-    image: node:16.20.2
+    build:
+      context: .
+      dockerfile: Dockerfile
     working_dir: /api-rest
-    volumes:
-      - ./api-volumen:/api-rest
     ports:
       - "3000:3000"
-    command: npm start
+    command: npm run start
+
 
