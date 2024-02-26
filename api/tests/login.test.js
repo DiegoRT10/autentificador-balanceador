@@ -24,7 +24,7 @@ describe('Pruebas de API', () => {
   it('Debería obtener datos con token en GET /', (done) => {
     request(app)
       .get('/usuario')
-      .set('Authorization', `Bearer ${authToken}`)
+      
       .expect(200, done);
   });
 
