@@ -40,10 +40,6 @@ router.post('/singin', (req, res) => {
     });
 });
 
-//es un test para verificar la veracidad del token 
-router.post('/test', Token.Verify, (req,res)=>{
-    res.json('INFORMACION SECRETA');
-});
 
 
 

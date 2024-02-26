@@ -8,3 +8,5 @@ const puerto = process.env.PROD_PORT;
 const server =  app.listen(puerto, ()=>{
     console.log('Servidor disponible en https://localhost:'+puerto)
 });
+
+module.exports = app; 
