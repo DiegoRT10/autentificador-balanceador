@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const key = process.env.secret_key;
 const Token = require('../tools/verifyToken');
 
-router.get('/',(req, res) => {
+router.get('/',Token.Verify,(req, res) => {
     console.log('holaaa');
     mysqlConection.query('select * from usuario;',(err, rows, fields) => {
         if(!err){
