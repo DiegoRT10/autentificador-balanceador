@@ -14,11 +14,7 @@ describe('Pruebas de API', () => {
       .expect(200)
       .end((err, res) => {
         if (err) return done(err);
-
-        // Almacena el token en la variable authToken
         authToken = res.body.token;
-
-        // Verifica que la respuesta contiene un token
         assert.ok(authToken, 'Se espera que la respuesta contenga un token');
         done();
       });
