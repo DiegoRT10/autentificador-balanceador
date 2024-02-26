@@ -1,5 +1,7 @@
+//const chai = require("chai");
 const request = require('supertest');
 const assert = require('assert');
+//const assert = chai.assert;
 const app = require('../../server');
 const pool = require('../connection/connection'); 
 
