@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('install dependencias'){
             steps{
-                bat 'npm install'
+                sh 'npm install'
             }
         }
         stage('prueba unitaria'){
             steps{
-                bat 'npm test'
+                sh 'npm test'
             }
         }
    
