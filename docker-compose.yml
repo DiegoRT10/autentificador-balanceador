@@ -5,7 +5,7 @@ services:
     image: node:16.20.2
     working_dir: /api-rest
     volumes:
-      - .:/api-rest
+      - ./api-volumen:/api-rest
     ports:
       - "3000:3000"
     command: npm start
