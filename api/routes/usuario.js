@@ -6,6 +6,7 @@ const key = process.env.secret_key;
 const Token = require('../tools/verifyToken');
 
 router.get('/',(req, res) => {
+    console.log('holaaa');
     mysqlConection.query('select * from usuario;',(err, rows, fields) => {
         if(!err){
             res.json(rows);

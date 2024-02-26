@@ -3,10 +3,10 @@ require('dotenv').config();
 
 const dbConfig = {
   connectionLimit: 10, // Número máximo de conexiones en el pool
-  host: process.env.host,
-  user: process.env.user,
-  password: process.env.password,
-  database: process.env.database
+  host: process.env.PROD_HOST,
+  user: process.env.PROD_USER,
+  password: process.env.PROD_PASSWORD,
+  database: process.env.PROD_DATABASE
 };
 
 let pool;
