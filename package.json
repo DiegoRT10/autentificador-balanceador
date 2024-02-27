@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha api/tests/login.test.js"
+    "test": "mocha --exit api/tests/login.test.js"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +14,10 @@
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mocha": "^10.3.0",
     "mysql2": "^3.9.1",
     "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0"
   }
 }
