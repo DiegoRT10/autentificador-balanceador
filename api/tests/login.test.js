@@ -78,7 +78,6 @@ describe('Pruebas de API', () => {
       .set('Authorization', `Bearer ${authToken}`)
       .expect(200);
 
-    // Puedes agregar más aserciones aquí si es necesario
     assert.strictEqual(response.status, 200, 'Se espera un código de estado 200');
     assert.ok(response.body, 'Se espera que la respuesta contenga datos');
   });
