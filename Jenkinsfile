@@ -11,7 +11,7 @@ pipeline {
         }
         stage('prueba unitaria'){
             steps{
-                sh 'npm test'
+                sh 'npm test --verbose'
             }
         }
    
