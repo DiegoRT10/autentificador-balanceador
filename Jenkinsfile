@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Esperar 10 segundos a que levante la BD') {
             steps {
-                sh 'sleep time: 10, unit: "SECONDS" '
+                sh 'sleep time: 10, unit: \'SECONDS\''
             }
         }
         stage('prueba unitaria'){
