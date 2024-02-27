@@ -65,7 +65,7 @@ describe('Pruebas de API', () => {
   it('Debería obtener un token en POST /singin', async () => {
     const response = await request(app)
       .post('/usuario/singin')
-      .send({ email: 'user1@gmail.com', password: '1234' })
+      .send({ email: 'user1@gmail.com', password: '123' })
       .expect(200);
 
     authToken = response.body.token;
