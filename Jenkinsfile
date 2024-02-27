@@ -9,9 +9,9 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Esperar 10 segundos a que levante la BD') {
+        stage('Espera 10 segundos a que levante la BD') {
             steps {
-                sh 'sleep time: 10, unit: \'SECONDS\''
+                sh 'sleep 10'
             }
         }
         stage('prueba unitaria'){
