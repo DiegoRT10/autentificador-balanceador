@@ -8,6 +8,6 @@ services:
       - .:/api-rest
     ports:
       - "3000:3000"
-    command: sh -c "npm install && npm start"
+    command: sh -c "npm install && npm install pm2 -g && pm2 start server.js "
 
 
