@@ -12,7 +12,7 @@ const microserverConsole =  process.env.MICROSERVER_CONSOLE;
 router.get('/catalogo-console',Token.Verify,(req, res) => {
     console.log('holaaa');
 
-    axios.get(microserverConsole)
+    axios.get(`${microserverGame}/catalogo/console`)
     .then(response => {
       console.log(response.data);
         res.json(response.data);
