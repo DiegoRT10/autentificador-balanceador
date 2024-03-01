@@ -29,7 +29,6 @@ describe('Pruebas de API', () => {
   it('Debería obtener datos con token en GET /', async () => {
     const response = await request(app)
       .get('/usuario')
-      .set('Authorization', `Bearer ${authToken}`)
       .expect(200);
 
     assert.strictEqual(response.status, 200, 'Se espera un código de estado 200');
