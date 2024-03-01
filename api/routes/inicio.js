@@ -5,7 +5,7 @@ require('dotenv').config();
 
 router.get('/',(reg, res) => {
     console.log('entre a la ruta ');
-    res.send('API AUTENTIFICADOR-BALANCEADOR!!');
+    res.send('API AUTENTIFICADOR-BALANCEADOR');
 });
 
   
