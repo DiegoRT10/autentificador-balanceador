@@ -15,11 +15,13 @@ app.use(cors());
 const useRouteInicio = require('./api/routes/inicio');
 const useRouteUsuario = require('./api/routes/usuario');
 const useRouteMicroGame = require('./api/routes/micro-game');
+const useRouteMicroConsole = require('./api/routes/micro-console');
 
 
 app.use('/inicio',useRouteInicio);
 app.use('/usuario',useRouteUsuario);
 app.use('/micro-game',useRouteMicroGame);
+app.use('/micro-console',useRouteMicroConsole);
 
 
 

@@ -21,3 +21,5 @@ router.get('/catalogo-console',Token.Verify,(req, res) => {
       console.error('Error al hacer la solicitud:', error.message);
     });
 });
+
+module.exports = router;
