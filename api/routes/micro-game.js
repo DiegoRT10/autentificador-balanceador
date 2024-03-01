@@ -10,7 +10,7 @@ const microserverGame =  process.env.MICROSERVER_GAME;
 
 
 //Read
-router.get('/catalogo-game',(req, res) => {
+router.get('/catalogo-game',Token.Verify,(req, res) => {
     console.log('holaaa');
 
     axios.get(microserverGame)
